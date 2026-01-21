@@ -5,6 +5,9 @@ import { WhatsAppFloatingButton } from "@/components/WhatsAppFloatingButton";
 import { Card } from "@/components/ui/card";
 
 const WHATSAPP_LINK = "https://wa.me/555199987643";
+const WHATSAPP_ORDER_LINK = `${WHATSAPP_LINK}?text=${encodeURIComponent(
+  "Olá! Quero fazer um pedido de cuca. Pode me ajudar?",
+)}`;
 
 const Index = () => {
   return (
@@ -47,7 +50,7 @@ const Index = () => {
                   Ver cardápio
                 </a>
                 <a
-                  href={WHATSAPP_LINK}
+                  href={WHATSAPP_ORDER_LINK}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center justify-center rounded-full border bg-background px-5 py-3 text-sm font-semibold text-foreground"
