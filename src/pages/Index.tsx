@@ -12,25 +12,23 @@ const WHATSAPP_ORDER_LINK = `${WHATSAPP_LINK}?text=${encodeURIComponent(
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <header className="sticky top-0 z-40 bg-background">
-        <div className="container py-3">
-          <div className="flex items-center justify-between gap-3 rounded-lg border bg-background px-3 py-2 shadow-soft sm:px-4">
-            <div className="flex min-w-0 items-center gap-2 sm:gap-3">
-              <img src={logo} alt="Delícias da Vozinha - logo" className="h-8 w-auto sm:h-9" loading="eager" />
-              <div className="min-w-0 leading-tight">
-                <p className="truncate text-sm font-semibold text-foreground sm:text-base">Delícias da Vozinha</p>
-                <p className="truncate text-xs text-muted-foreground">Cucas artesanais • Encomendas</p>
-              </div>
+      <header className="sticky top-0 z-40 border-b bg-background/80 backdrop-blur">
+        <div className="container flex h-16 items-center justify-between">
+          <div className="flex items-center gap-3">
+            <img src={logo} alt="Delícias da Vozinha - logo" className="h-9 w-auto" loading="eager" />
+            <div className="leading-tight">
+              <p className="text-sm font-semibold text-foreground">Delícias da Vozinha</p>
+              <p className="text-xs text-muted-foreground">Cucas artesanais • Encomendas</p>
             </div>
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noreferrer"
-              className="hidden shrink-0 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-soft transition-transform hover:scale-[1.02] active:scale-[0.98] sm:inline-flex"
-            >
-              Pedir no WhatsApp
-            </a>
           </div>
+          <a
+            href={WHATSAPP_LINK}
+            target="_blank"
+            rel="noreferrer"
+            className="hidden rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-soft transition-transform hover:scale-[1.02] active:scale-[0.98] sm:inline-flex"
+          >
+            Pedir no WhatsApp
+          </a>
         </div>
       </header>
 
