@@ -66,11 +66,11 @@ const Index = () => {
             <div className="lg:col-span-6">
               <Card className="overflow-hidden shadow-soft">
                 <div className="grid gap-0 sm:grid-cols-2">
-                  <div className="relative aspect-square sm:aspect-auto sm:h-full">
+                  <div className="relative aspect-[4/3] max-h-72 sm:aspect-auto sm:h-full sm:max-h-none">
                     <img
                       src={heroPhoto}
                       alt="Foto da cozinheira responsável pelas cucas"
-                      className="h-full w-full object-cover"
+                      className="h-full w-full object-cover object-top"
                       loading="lazy"
                     />
                   </div>
