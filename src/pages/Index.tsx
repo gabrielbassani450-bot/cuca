@@ -37,7 +37,7 @@ const Index = () => {
           <div className="container grid items-center gap-8 py-10 sm:py-14 lg:grid-cols-12">
             <div className="lg:col-span-6">
               <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-                Cucas caseiras para adoçar seu dia
+                Cucas caseiras e Biscoitos para adoçar seu dia
               </h1>
               <p className="mt-4 max-w-prose text-pretty text-base text-muted-foreground sm:text-lg">
                 Sabor de casa, feito com carinho — escolha o sabor no cardápio e faça seu pedido pelo WhatsApp.
